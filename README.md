@@ -1,4 +1,3 @@
-# Pseudocode
 # Pszeudokód magyar nyelven
 
 Magyar nyelvű változata a [generic-pseudocode-vscode](https://github.com/Willumz/generic-pseudocode-vscode) projektnek.
@@ -11,7 +10,7 @@ Syntax highlighting exists for multiple variants of common pseudocode keywords, 
 
 The following items have syntax highlighting. Synonyms are separated by spaces.
 
-#### Keywords:
+#### Kulcsszavak:
 ```
 kiír ki e.g. kiír "Heló világ"
 beolvas be
@@ -32,14 +31,14 @@ continue
 do
 vége
 ```
-#### Operators:
+#### Műveletek:
 ```
 és &&
 vagy ||
 nem !
 in
 ```
-#### Functions:
+#### Függvények:
 ```
 függvény
 procedure
