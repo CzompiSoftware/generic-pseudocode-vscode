@@ -1,9 +1,7 @@
 # Pseudocode
+# Pszeudokód magyar nyelven
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/willumz.generic-pseudocode)](https://marketplace.visualstudio.com/items?itemName=willumz.generic-pseudocode)
-<!-- [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/willumz.generic-pseudocode)](https://marketplace.visualstudio.com/items?itemName=willumz.generic-pseudocode) -->
-
-A simple extension for syntax highlighting of generic pseudocode.
+Magyar nyelvű változata a [generic-pseudocode-vscode](https://github.com/Willumz/generic-pseudocode-vscode) projektnek.
 
 Syntax highlighting exists for multiple variants of common pseudocode keywords, allowing you to use your own style and not confining you to a specific format.
 
@@ -15,16 +13,16 @@ The following items have syntax highlighting. Synonyms are separated by spaces.
 
 #### Keywords:
 ```
-output print e.g. output "Hello World"
-input
-if
-else
+kiír ki e.g. kiír "Heló világ"
+beolvas be
+ha
+különben
 try
 catch except
 import
-while loop
-for
-foreach
+amíg loop
+ciklus
+ciklus
 return
 set e.g. set x = 1
 switch
@@ -32,120 +30,22 @@ case
 break
 continue
 do
-end
+vége
 ```
 #### Operators:
 ```
-and &&
-or ||
-not !
+és &&
+vagy ||
+nem !
 in
 ```
 #### Functions:
 ```
-function
+függvény
 procedure
 e.g.
-    function say(x) do
-        print x
-    end
-    say("Hello World")
+    függvény mond(x)
+        ki x
+    függvény vége
+    mond("Heló világ")
 ```
-#### Classes:
-```
-class
-extends
-e.g.
-    class A do
-        constructor() do
-            print "Hi"
-        end
-    end
-e.g.
-    class B extends A do
-        constructor() do
-            print "Hi"
-        end
-    end
-```
-#### Structs:
-```
-struct
-e.g.
-    struct A do
-        
-    end
-```
-#### Template Strings:
-```
-${}
-e.g.
-    set user = "John"
-    print "Hello, ${user}!"
-```
-If Else:
-
-![If else](images/ifelse.png)
-
-Loops:
-
-![Loops](images/loops.png)
-
-Switch:
-
-![Switch](images/switch.png)
-
-Try Catch:
-
-![Try catch](images/trycatch.png)
-
-Functions:
-
-![Functions](images/function.png)
-
-Classes:
-
-![Classes](images/class.png)
-
-Structs:
-
-![Structs](images/struct.png)
-
-### Snippets
-![Snippets](images/snippets.gif)
-
-## Known Bugs
-
-- do end autocloses in variables
-
-## Release Notes
-
-### 1.3.0
-
-- Added `static`, `public`, and `private` modifiers for structs, classes, and functions
-- Added the `continue` keyword
-
-### 1.2.0
-
-- Added template strings (e.g. `"Hi ${user.name}"`)
-
-### 1.1.0
-
-- Added structs
-- Added `struct` and `structdo` snippets
-
-### 1.0.3
-
-- Fixed bug where do end would be autoclose in strings and comments
-
-### 1.0.2
-
-- Fixed bug which prevented comments in functions and procedures
-
-### 1.0.1
-
-- Minor changes to extension information
-
-### 1.0.0
-
-- Initial release with syntax highlighting and snippets for basic statements and definitions.
