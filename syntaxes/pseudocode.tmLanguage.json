@@ -45,15 +45,15 @@
 			"patterns": [
 				{
 					"name": "keyword.control.pseudocode",
-					"match": "(?i)\\b(if|else|try|catch|except|output|import|while|for|foreach|loop|return|print|input|set|extends|static|public|private|switch|case|do|end|break|continue)\\b"
+					"match": "(?i)\\b(ha|különben|try|catch|except|ki|kiír|import|while|for|foreach|loop|visszaad|print|input|set|extends|static|public|private|switch|case|do|end|break|continue)\\b"
 				},
 				{
 					"name": "keyword.operator.logical.pseudocode",
-					"match": "(?i)\\b(and|or|not|!|&&|\\|\\||in)\\b"
+					"match": "(?i)\\b(és|vagy|nem|!|&&|\\|\\||in)\\b"
 				},
 				{
 					"name": "keyword.declaration.function.pseudocode",
-					"match": "(?i)\\b(function|procedure)\\b"
+					"match": "(?i)\\b(függvény|procedure)\\b"
 				},
 				{
 					"name": "keyword.declaration.class.pseudocode",
@@ -78,8 +78,8 @@
 			"patterns": [
 				{
 					"name": "meta.function.pseudocode",
-					"begin": "(?i)\\b(static |private |public )?((function|procedure)) ([a-zA-Z_][a-zA-Z0-9_]*)\\(((.*?))\\) *(?:\\{|(do))",
-					"end": "(?i)(?:\\}|(end))",
+					"begin": "(?i)\\b(static |private |public )?((függvény|procedure)) ([a-zA-Z_][a-zA-Z0-9_]*)\\(((.*?))\\) *(?:\\{|(do))",
+					"end": "(?i)(?:\\}|((|függvény )vége))",
 					"beginCaptures": {
 						"1": {
 							"name": "storage.modifier.pseudocode"
@@ -143,8 +143,8 @@
 				},
 				{
 					"name": "meta.class.pseudocode",
-					"begin": "(?i)\\b(static |private |public )?((class)) ([a-zA-Z_][a-zA-Z0-9_]*) *(?:(extends) *([a-zA-Z_][a-zA-Z0-9_]*))? *(?:\\{|(do))",
-					"end": "(?i)(?:\\}|(end))",
+					"begin": "(?i)\\b(static |private |public )?((osztály)) ([a-zA-Z_][a-zA-Z0-9_]*) *(?:(extends) *([a-zA-Z_][a-zA-Z0-9_]*))? *(?:\\{|(do))",
+					"end": "(?i)(?:\\}|((|osztály )vége))",
 					"beginCaptures": {
 						"1": {
 							"name": "storage.modifier.pseudocode"
